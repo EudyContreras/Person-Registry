@@ -1,9 +1,8 @@
 #pragma once
 #include "Person.h"
+
 class PersonWithPhone : public Person{
 
-private:
-	string phoneNumber;
 public:
 	PersonWithPhone();
 	PersonWithPhone(string name, string phoneNumber,string address);
@@ -14,5 +13,7 @@ public:
 	void setPhoneNumber(string number);
 	virtual void print();
 
+private:
+	string phoneNumber;
 };
 

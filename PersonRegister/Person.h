@@ -1,17 +1,10 @@
+#pragma once
+
 #include "stdafx.h"
 #include <iostream>
 #include <string>
 
-#pragma once
-
-using namespace std;
-
 class Person {
-
-private:
-	int32_t age;
-	string name;
-	string address;
 
 public:
 	Person();
@@ -30,4 +23,10 @@ public:
 	void setAge(int32_t age);
 
 	virtual void print() const;
+
+private:
+	int32_t age;
+	string name;
+	string address;
+
 };

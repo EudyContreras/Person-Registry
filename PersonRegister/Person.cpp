@@ -1,18 +1,13 @@
 #include "stdafx.h"
 #include "Person.h"
 
-#pragma once
+using namespace std;
 
 	Person::Person():Person("N/A", "N/A") {}
 
 	Person::Person(string name, string address) :Person(name, 0, address){}
 
-	Person::Person(string name, int32_t age, string address)
-	{
-		Person::setName(name);
-		Person::setAddress(address);
-		Person::setAge(age);
-	}
+	Person::Person(string name, int32_t age, string address) : name(name), age(age), address(address){}
 
 	string Person::getName() 
 	{

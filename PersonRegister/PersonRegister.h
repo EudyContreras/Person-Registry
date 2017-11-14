@@ -1,16 +1,10 @@
+#pragma once
+
 #include "stdafx.h"
 #include <stdint.h>
 #include "Person.h"	
 
 class PersonRegister {
-
-private:
-	Person* persons;
-
-	int32_t maxSize;
-	int32_t size;
-
-	Person* performFreeSearch(string name, Person* last);
 
 public:
 
@@ -27,4 +21,10 @@ public:
 	void addPerson(Person* person);
 	void removePerson(Person* person);
 	void print();
+
+private:
+	Person* persons;
+
+	int32_t maxSize;
+	int32_t size;
 };
