@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "PersonWithPhone.h"
 
+using namespace std;
 
 PersonWithPhone::PersonWithPhone() : PersonWithPhone("N/A","N/A","N/A"){}
 

@@ -1,5 +1,6 @@
-#pragma once
+
 #include "Person.h"
+#pragma once
 
 class PersonWithPhone : public Person{
 

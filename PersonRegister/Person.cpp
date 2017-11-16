@@ -1,8 +1,6 @@
 #include "stdafx.h"
 #include "Person.h"
 
-using namespace std;
-
 	Person::Person():Person("N/A", "N/A") {}
 
 	Person::Person(string name, string address) :Person(name, 0, address){}
@@ -39,7 +37,7 @@ using namespace std;
 		this->age = age;
 	}
 
-	void Person::print() const
+	void Person::print()
 	{
 		cout << "Name: " << name << ", ";
 		cout << "Age: " << age << ", ";

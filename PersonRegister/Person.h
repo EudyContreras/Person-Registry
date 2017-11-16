@@ -1,8 +1,9 @@
-#pragma once
-
 #include "stdafx.h"
 #include <iostream>
 #include <string>
+
+#pragma once
+using namespace std;
 
 class Person {
 
@@ -22,7 +23,7 @@ public:
 	void setAddress(string address);
 	void setAge(int32_t age);
 
-	virtual void print() const;
+	virtual void print();
 
 private:
 	int32_t age;
